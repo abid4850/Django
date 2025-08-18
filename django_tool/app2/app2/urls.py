@@ -1,5 +1,5 @@
 """
-URL configuration for app1 project.
+URL configuration for app2 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -19,11 +19,4 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
-from django.contrib import admin
-from django.urls import path, include
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('portfolio.urls')),  # link portfolio app
 ]
