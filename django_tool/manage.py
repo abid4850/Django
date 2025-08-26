@@ -6,7 +6,9 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app2.settings')
+    # Use the inner app2 project settings so manage.py works from the repo root
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app2.app2.settings')
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

@@ -21,5 +21,5 @@ pip install django
 ```bash
 django-admin startproject codanics # codanics is the project name
 cd codanics
+
 python manage.py runserver
-```
