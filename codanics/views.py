@@ -8,7 +8,7 @@ def home(request):
 # Create blog view
 #def blog(request):
 #    return HttpResponse("Welcome to the Blog Page")
-def home(request):
+def index(request):
     return render(request, 'index.html')
 
 def blog(request):
