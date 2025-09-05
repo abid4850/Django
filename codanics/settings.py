@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r@!lo0bf=ms-mvi%84moym*y2!3k%y(q_f#p%*x=7n354xz!6$'
+SECRET_KEY = 'django-insecure-m!o%%uff508goylpexum3fxja&la)$wbk=ntr=)*_pyj5^fd$o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -116,7 +116,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / "static"
+STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     "codanics/static",
 ]
@@ -126,6 +126,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# adding images upload by user as url and also base dir
-MEDIA_URL = '/media/'
+# adding images uploaded by user as url and also base dir
+
+MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'

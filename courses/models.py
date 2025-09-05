@@ -1,6 +1,6 @@
 from django.db import models
 
-class courses(models.Model):
+class Courses(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
     course_image = models.ImageField(upload_to='images/')
@@ -12,7 +12,8 @@ class courses(models.Model):
     instructor = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
+    is_active = models.BooleanField(default=True)
 
     def __str__(self):
         return self.title
+
